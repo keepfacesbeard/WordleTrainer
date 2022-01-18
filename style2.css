@@ -169,5 +169,6 @@ body {
     cursor: pointer;
   }
   #enter, #delete{
+      font-size: small;
       min-width: 60px;
   }
