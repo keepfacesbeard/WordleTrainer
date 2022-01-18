@@ -128,7 +128,7 @@ function buildWordBoard() {
             
         }
         else if (e.keyCode == 8 || letter == 'delete'){
-            if (activeTile > endOfRow - 5){
+            if (activeTile > endOfRow - 4){
                 --activeTile
             }
             let currentTile = document.getElementById(`tile${activeTile}`);
