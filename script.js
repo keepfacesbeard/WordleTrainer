@@ -120,7 +120,7 @@ function buildWordBoard() {
 
   function clickLetter(e) {
     let letter = ''
-    let endOfRow = activeRow * 5 + (activeRow-1);
+    let endOfRow = activeRow * 4 + (activeRow-1);
     if (e.target.id && document.getElementById(e.target.id).className.includes('keyboardkey')==true){
         letter = e.target.id;
         if (letter == 'enter') {
