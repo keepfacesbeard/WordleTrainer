@@ -61,6 +61,10 @@ body {
     text-justify: center;
     padding: 1.25vw 1.25vw;
 }
+#enter, #delete{
+    font-size: small;
+ 
+}
 .keyrow{
     display: flex;
     justify-content: center;
