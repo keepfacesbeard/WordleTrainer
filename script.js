@@ -235,6 +235,7 @@ function popupModal(text){
                     document.getElementById(guess[i].toUpperCase()).classList.add('inword');
                 }
                 else if (Array.from(theAnswer).includes(guess[i]) == false) {
+                    document.getElementById(`tile${tileIndex}`).classList.add('notinword');
                     document.getElementById(guess[i].toUpperCase()).classList.add('notinword');
                 }
             }
@@ -257,11 +258,12 @@ function isLetter(c) {
   }
 
 function resetGame(){
-    gameOn == true;
+    gameOn = true;
     for (let i =0; i<30; i++){
         let tile = document.getElementById(`tile${i}`);
         tile.innerText = ' ';
         tile.classList.remove('inword');
+        tile.classList.remove('notinword');
         tile.classList.remove('inplace');
     }
     const keys = document.querySelectorAll('.keyboardkey');
